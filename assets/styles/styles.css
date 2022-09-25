@@ -13,7 +13,7 @@
 
 body {
   background-color: lightblue;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 header{
@@ -28,6 +28,8 @@ header{
 
 header a {
   text-decoration: none;
+  
+
 }
 
 header h1 {
@@ -43,7 +45,6 @@ header h1 {
 
 nav li{
 display: inline;
-text-decoration: none;
 font-size: 1.5em;
 color:darkgoldenrod
 }
@@ -52,16 +53,24 @@ nav :hover {
   color: rgb(186, 205, 222);
 }
 
-figure {
- 
+figure div {
+  display: flex;
+  height: 5vh;
+  width: 100%;
+  background: darkgoldenrod;
+  color: silver;
+  justify-content: flex-end;
+  justify-content:;
+  
 }
 
 main {
   min-height:70vh;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-around; 
   max-width: 9000px;
+  
 }
 
 section {
@@ -72,14 +81,23 @@ section {
   max-width: 900px;
 }
 
+section a {
+  text-decoration: none;
+}
 section h3 {
 display: flex;
 align-items: center;
 width:30%;
 font-size: x-large;
-/* border-right: 5px solid black; */
 }
 
+a h3 {
+  position: relative;
+  color: darkgoldenrod;
+  
+
+
+}
 .about-me {
   display: flex;
   border: none;
@@ -97,6 +115,7 @@ font-size: x-large;
   display: flex;
   border: none;
   align-items: center;
+  position: relative;
 
 }
 
@@ -104,7 +123,6 @@ font-size: x-large;
   display: flex;
   border: none;
   align-items: center;
-
 
 }
 .nav-bar {
@@ -120,7 +138,7 @@ border-bottom: 5px solid lightyellow;
   display:flex;
   align-items: right;
   user-select: all;
- 
+  border-left: 5px solid black;
 }
 
 .contact-info {
@@ -132,7 +150,7 @@ border-bottom: 5px solid lightyellow;
   list-style: none;
   justify-content: space-between;
   align-items: center;
- 
+
   
 }
 
@@ -141,15 +159,60 @@ border-bottom: 5px solid lightyellow;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  border-left: 5px solid black; 
+ 
   
+
 }
 
-@media screen and (width: 968px) {
+.picture a {
+  border: 2px solid black;
+}
+
+#big-picture {
+  width: 600px;
+    height: 400px;
+}
+
+
+
+@media screen and (max-width: 992px) {
+  .info-box {
+    border-top: 5px solid black;
+    border-left: none;
+  }
+  .picture {
+    border-top: 5px solid black;
+    border-left: none;
+  }
+  header h1 {
+    font-size: 2em;
+    justify-content: center;
+    width: 100%;
+  }
+  section {
+    flex-direction: column;
+    justify-content: center;
   
+  }
+  section h3 {
+    display: flex;
+    justify-content: center;
+    width:30%;
+    font-size: 50px;
+  }
+  main {
+    justify-content: center;
   }
 
 
-@media screen and (width: 756px) {
-  
+
+
+@media screen and (width: 768px) {
+   #little-picture {
+      width: 100%;
+    }
+    
+  }
 }
 
