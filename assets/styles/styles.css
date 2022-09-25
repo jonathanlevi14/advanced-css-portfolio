@@ -14,8 +14,10 @@
 
 body {
   background-color: var(--backgroud-color);
-  font-family: var(--text-stsyle)
+  font-family: var(--text-stsyle);
+  max-width: 1800px;
 }
+
 /* HEADER */
 header{
   width:100%;
@@ -67,14 +69,13 @@ figure {
   background: darkgoldenrod;
   color: silver;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 figure img {
   display: flex;
   align-self: center;
   margin-left: 26px;
-  /* align-items: center; */
-
 }
 
 .my-picture {
@@ -164,6 +165,7 @@ section a h2 {
   display: flex;
   border: none;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .contact-info {
@@ -181,7 +183,10 @@ section a h2 {
   width: 600px;
     height: 400px;
 }
-
+ #little-picture {
+  width: 250;
+  height: 200;
+ }
 /* At 992 and smaller */
 
 @media screen and (max-width: 992px) {
@@ -202,20 +207,22 @@ section a h2 {
 /* englarge my name at the top of the screen */
   header {
   width:100%;
-  height: 10vh;
+  height: 20vh;
   background: var(--backgroud-color);
   border-bottom:1px solid black;
   display: flex;
   align-items:center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   }
 
   .nav-bar {
     display: block;
+    text-align: right;
   }
 
   header h1 {
-    font-size: 6em;
+    font-size: 5em;
     justify-content: center;
     /* width: 100%; */
   }
@@ -230,10 +237,16 @@ section a h2 {
     width:30%;
     font-size: 50px;
   }
+
+  section div a  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   main {
     justify-content: center;
   }
-
+}
 
 
   /* At 768 and smaller */
