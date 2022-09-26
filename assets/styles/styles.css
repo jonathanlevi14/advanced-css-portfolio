@@ -41,6 +41,10 @@ header h1 {
 a {
   text-decoration: none;
   color:var(--header-text-color);
+  
+}
+
+a:hover {
   text-shadow: #FC0 1px 0 10px;
 }
 
@@ -272,10 +276,21 @@ footer {
 
   /* At 768 and smaller */
 
-@media screen and (width: 768px) {
+@media screen and (max-width: 768px) {
+  /* contact info gets in column */
   .contact-info {
     flex-direction: column;
     flex-wrap: wrap;
   }
+
+  /* my picture goes away */
+  header h1 {
+    font-size: 2em;
+  }
+  /* my name gets smaller */
+  figure img {
+    display: none;
+  }
+
 }
 
