@@ -1,7 +1,7 @@
 :root {
   --backgroud-color: lightblue;
   --header-bg-color: darkgoldenrod;
-  --header-text-color:lightblue;
+  --header-text-color: silver;
   --main-text: black;
   --text-stsyle: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
@@ -46,7 +46,7 @@ a {
 nav li{
 display: inline;
 font-size: 1.5em;
-color: var(--header-bg-color)
+color: var(--header-text-color)
 }
 
 nav :hover {
@@ -64,18 +64,27 @@ nav :hover {
 figure {
   background-color:var(--header-bg-color);
   display: flex;
-  height: 20vh;
+  height: 150px;
   width: 100%;
   background: darkgoldenrod;
   color: silver;
   justify-content: space-between;
-  overflow: hidden;
+
 }
 
+/* stole shadowbox from internet */
 figure img {
+
+  height: 200px;
   display: flex;
-  align-self: center;
-  margin-left: 26px;
+  align-self:baseline;
+  margin-left: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+figure h2 {
+  margin: 25px;
 }
 
 .my-picture {
@@ -154,13 +163,22 @@ section a h2 {
   justify-content: space-evenly;
   border-left: 5px solid black; 
 }
+/* Image for Work section */
+ {
+  position: absolute;
+  left: 15px;
+  bottom: 8px;
+}
 
 .work-picture a {
-  border: 2px solid black;
+
 }
 
 /* CONTACT */
-
+footer {
+  display: flex;
+  justify-content: space-between;
+}
 .contact {
   display: flex;
   border: none;
@@ -187,15 +205,13 @@ section a h2 {
   width: 250;
   height: 200;
  }
+
+ 
 /* At 992 and smaller */
 
 @media screen and (max-width: 992px) {
   /* move the border from the left ot the top */
   .info-box {
-    border-top: 5px solid black;
-    border-left: none;
-  }
-  .picture {
     border-top: 5px solid black;
     border-left: none;
   }
@@ -209,7 +225,6 @@ section a h2 {
   width:100%;
   height: 20vh;
   background: var(--backgroud-color);
-  border-bottom:1px solid black;
   display: flex;
   align-items:center;
   justify-content: center;
@@ -236,6 +251,7 @@ section a h2 {
     justify-content: center;
     width:30%;
     font-size: 50px;
+    justify-content: center;
   }
 
   section div a  {
@@ -252,7 +268,9 @@ section a h2 {
   /* At 768 and smaller */
 
 @media screen and (width: 768px) {
-  
-    
+  .contact-info {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
