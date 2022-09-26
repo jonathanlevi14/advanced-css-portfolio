@@ -1,9 +1,10 @@
 :root {
-  --backgroud-color: lightblue;
-  --header-bg-color: darkgoldenrod;
-  --header-text-color: silver;
+  --backgroud-color: #7ac5c6;
+  --header-bg-color: #f0ac50;
+  --header-text-color: #9599ac;
   --main-text: black;
-  --text-stsyle: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  --nav-bar-color: #9599ac;
+  --text-style: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 * {
@@ -14,7 +15,7 @@
 
 body {
   background-color: var(--backgroud-color);
-  font-family: var(--text-stsyle);
+  font-family: var(--text-style);
   max-width: 1800px;
 }
 
@@ -34,11 +35,13 @@ header h1 {
   font-size: 4em;
   width: fit-content;
   padding: 5px;
+
 }
 
 a {
   text-decoration: none;
-  
+  color:var(--header-text-color);
+  text-shadow: #FC0 1px 0 10px;
 }
 
 /* NAV BAR */
@@ -56,7 +59,8 @@ nav :hover {
 .nav-bar {
   font-weight:500;
   text-align: right;
-  border-bottom: 5px solid lightyellow;
+  border-bottom: 5px solid #caab76;
+  
   }
 
 /* FIGURE */
@@ -66,7 +70,7 @@ figure {
   display: flex;
   height: 150px;
   width: 100%;
-  background: darkgoldenrod;
+  background: var(--header-bg-color);
   color: silver;
   justify-content: space-between;
 
@@ -85,6 +89,7 @@ figure img {
 
 figure h2 {
   margin: 25px;
+  color:var(--header-text-color)
 }
 
 .my-picture {
