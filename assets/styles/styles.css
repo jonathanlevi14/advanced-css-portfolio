@@ -77,7 +77,6 @@ figure {
   justify-content: space-between;
 }
 
-/* stole shadowbox from internet */
 figure img {
   height: 200px;
   display: flex;
@@ -103,7 +102,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 9000px;
 }
 
 /* SECTION */
@@ -114,6 +112,8 @@ section {
   display: flex;
   flex-direction: row;
   max-width: 900px;
+  display: flex;
+  justify-content: space-between;
 }
 
 section h3 {
@@ -123,37 +123,21 @@ section h3 {
   font-size: x-large;
 }
 
+.about-me p {
+  border-left: 5px solid black;
+  padding-left: 10px;
+}
+
 section a {
   text-decoration: none;
 }
 
 section a h2 {
   position: relative;
-  color: darkgoldenrod;
-}
-/* ABOUT ME */
-/* .about-me {
-  display: flex;
-  border: none;
-  align-items: left;
-  background-color: none;
-} */
-
-.about-me p {
-  border-left: 5px solid black;
-  padding-left: 10px;
+  color: var(--header-bg-color);
 }
 
-.info-box {
-  flex-grow: 1;
-  display: flex;
-  align-items: right;
-  user-select: all;
-  border-left: 5px solid black;
-  background-color: var(--header-bg-color);
-}
-
-/* WORK */
+/* Work Section*/
 
 .work {
   display: flex;
@@ -169,21 +153,13 @@ section a h2 {
   justify-content: space-evenly;
   border-left: 5px solid black;
 }
-/* Image for Work section */
-/* .work-picture a img {
-  position: absolute;
-  left: 15px;
-  bottom: 8px;
-} */
 
-/* .work-picture a {
-} */
-
-/* CONTACT */
-section {
-  display: flex;
-  justify-content: space-between;
+#big-picture {
+  width: 600px;
+  height: 400px;
 }
+
+/* Contact Section */
 .contact {
   display: flex;
   border: none;
@@ -202,18 +178,22 @@ section {
   align-items: center;
 }
 
-#big-picture {
-  width: 600px;
-  height: 400px;
+.info-box {
+  min-width: 700px;
+  flex-grow: 1;
+  display: flex;
+  align-items: right;
+  border-left: 5px solid black;
+  background-color: var(--header-bg-color);
 }
-.little-picture {
-  width: 250;
-  height: 200;
-}
+
+
+
 
 /* At 992 and smaller */
 
 @media screen and (max-width: 992px) {
+  
   /* move the border from the left ot the top */
   .info-box {
     border-top: 5px solid black;
@@ -231,16 +211,11 @@ section {
     flex-wrap: wrap;
   }
 
-  /* .nav-bar {
-    display: block;
-    text-align: right;
-  } */
-
   header h1 {
     font-size: 5em;
     justify-content: center;
-    /* width: 100%; */
   }
+
   section {
     flex-direction: column;
     justify-content: center;
@@ -252,6 +227,7 @@ section {
     align-items: center;
     background-color: none;
   }
+
 /* move the border from the left side to the top */
   .about-me p {
     border-top: 5px solid black;
@@ -261,6 +237,8 @@ section {
   .work-picture{
     border-top: 5px solid black;
     border-left: none;
+    min-width: none;
+    }
   }
 
   section h3 {
@@ -279,11 +257,10 @@ section {
   main {
     justify-content: center;
   }
-}
 
 /* At 768 and smaller */
-
 @media screen and (max-width: 768px) {
+ 
   /* contact info gets in column */
   .contact-info {
     flex-direction: column;
@@ -299,9 +276,18 @@ section {
     display: none;
   }
 
+  /* subtitle gets bigger */
+  figure h2 {
+  font-size: 40px;
+  }
+
   section {
     flex-direction: column;
     justify-content: center;
+  }
+
+  .work-picture {
+    min-width: none;
   }
 
   section div a {
@@ -310,6 +296,11 @@ section {
     justify-content: center;
     max-width: 300px;
   }
+
+  .info-box {
+    min-width: none;
+  }
+
 /* The top picutre becomes the same size as the others */
   #big-picture {
     width: 315px;
