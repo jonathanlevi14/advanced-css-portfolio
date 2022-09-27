@@ -4,12 +4,12 @@
   --header-text-color: #9599ac;
   --main-text: black;
   --nav-bar-color: #9599ac;
-  --text-style: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  --text-style: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 * {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -21,40 +21,38 @@ body {
 }
 
 /* HEADER */
-header{
-  width:100%;
+header {
+  width: 100%;
   height: 10vh;
   background: var(--backgroud-color);
-  border-bottom:1px solid black;
+  border-bottom: 1px solid black;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 }
 
 header h1 {
-  color:var(--header-bg-color);
+  color: var(--header-bg-color);
   font-size: 4em;
   width: fit-content;
   padding: 5px;
-
 }
 
-a {
+header a {
   text-decoration: none;
-  color:var(--header-text-color);
-  
+  color: var(--header-text-color);
 }
 
 a:hover {
-  text-shadow: #FC0 1px 0 10px;
+  text-shadow: #fc0 1px 0 10px;
 }
 
 /* NAV BAR */
 
-nav li{
-display: inline;
-font-size: 1.5em;
-color: var(--header-text-color)
+nav li {
+  display: inline;
+  font-size: 1.5em;
+  color: var(--header-text-color);
 }
 
 nav :hover {
@@ -62,59 +60,50 @@ nav :hover {
 }
 
 .nav-bar {
-  font-weight:500;
+  font-weight: 500;
   text-align: right;
   border-bottom: 5px solid #caab76;
-  
-  }
+}
 
 /* FIGURE */
 
 figure {
-  background-color:var(--header-bg-color);
+  background-color: var(--header-bg-color);
   display: flex;
   height: 150px;
   width: 100%;
   background: var(--header-bg-color);
   color: silver;
   justify-content: space-between;
-
 }
 
 /* stole shadowbox from internet */
 figure img {
-
   height: 200px;
   display: flex;
-  align-self:baseline;
+  align-self: baseline;
   margin-left: 25px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 figure h2 {
   margin: 25px;
-  color:var(--header-text-color)
-}
-
-.my-picture {
+  color: var(--header-text-color);
   align-items: center;
-}
-
-figure h2 {
-  justify-content:flex-end;
+  justify-content: flex-end;
   align-self: flex-end;
 }
 
 /* MAIN */
 
 main {
-  min-height:70vh;
+  min-height: 70vh;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; 
+  justify-content: space-around;
   max-width: 9000px;
-  
 }
 
 /* SECTION */
@@ -128,10 +117,10 @@ section {
 }
 
 section h3 {
-display: flex;
-align-items: center;
-width:30%;
-font-size: x-large;
+  display: flex;
+  align-items: center;
+  width: 30%;
+  font-size: x-large;
 }
 
 section a {
@@ -143,12 +132,12 @@ section a h2 {
   color: darkgoldenrod;
 }
 /* ABOUT ME */
-.about-me {
+/* .about-me {
   display: flex;
   border: none;
   align-items: left;
   background-color: none;
-}
+} */
 
 .about-me p {
   border-left: 5px solid black;
@@ -156,8 +145,8 @@ section a h2 {
 }
 
 .info-box {
-  flex-grow:1;
-  display:flex;
+  flex-grow: 1;
+  display: flex;
   align-items: right;
   user-select: all;
   border-left: 5px solid black;
@@ -178,18 +167,17 @@ section a h2 {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  border-left: 5px solid black; 
+  border-left: 5px solid black;
 }
 /* Image for Work section */
- {
+/* .work-picture a img {
   position: absolute;
   left: 15px;
   bottom: 8px;
-}
+} */
 
-.work-picture a {
-
-}
+/* .work-picture a {
+} */
 
 /* CONTACT */
 section {
@@ -212,19 +200,17 @@ section {
   list-style: none;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 #big-picture {
   width: 600px;
-    height: 400px;
+  height: 400px;
 }
- #little-picture {
+.little-picture {
   width: 250;
   height: 200;
- }
+}
 
- 
 /* At 992 and smaller */
 
 @media screen and (max-width: 992px) {
@@ -234,21 +220,21 @@ section {
     border-left: none;
   }
 
-/* englarge my name at the top of the screen */
+  /* englarge my name at the top of the screen */
   header {
-  width:100%;
-  height: 20vh;
-  background: var(--backgroud-color);
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  flex-wrap: wrap;
+    width: 100%;
+    height: 20vh;
+    background: var(--backgroud-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .nav-bar {
+  /* .nav-bar {
     display: block;
     text-align: right;
-  }
+  } */
 
   header h1 {
     font-size: 5em;
@@ -266,8 +252,13 @@ section {
     align-items: center;
     background-color: none;
   }
-
+/* move the border from the left side to the top */
   .about-me p {
+    border-top: 5px solid black;
+    border-left: none;
+  }
+
+  .work-picture{
     border-top: 5px solid black;
     border-left: none;
   }
@@ -275,12 +266,12 @@ section {
   section h3 {
     display: flex;
     justify-content: center;
-    width:30%;
+    width: 30%;
     font-size: 50px;
     justify-content: center;
   }
 
-  section div a  {
+  section div a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -290,8 +281,7 @@ section {
   }
 }
 
-
-  /* At 768 and smaller */
+/* At 768 and smaller */
 
 @media screen and (max-width: 768px) {
   /* contact info gets in column */
@@ -309,13 +299,22 @@ section {
     display: none;
   }
 
-  section div a  {
+  section {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  section div a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 300px;
-
   }
-
+/* The top picutre becomes the same size as the others */
+  #big-picture {
+    width: 315px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
 }
-
+}

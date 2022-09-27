@@ -1,15 +1,13 @@
 # advanced-css-portfolio
 
-# <Your-Project-Title>
-
 ## Description
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+- I created this page to showcase my career as a software developer.
+- As I learn new skill I will add that to the growing list of skills I have on this page.
+- I can also use this page as a place to try new things and get ideas onto the page.
+- I was really able to understand FlexBox better. I learned many new tips and tricks for CSS and styling text, images, and backgrounds.
 
 ## Installation
 
@@ -17,17 +15,17 @@ Nothing to Intall.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+There is a navigation bar at the top of the page if you would like to quickly access other portions of the webpage.
+
+Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
 ![alt text](assets/images/screenshot.png)
 
 ## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+I used this tips and tricks page used 
+https://css-tricks.com/wp-content/uploads/2022/02/css-flexbox-poster.png
 
 If you followed tutorials, include links to those here as well.
 

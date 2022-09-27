@@ -1,61 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
-</head>
-<body>
-  <!-- header is my name in bold and the navbar links -->
-  <header>
-    <h1>JONATHAN GARRETT</h1>
-    <nav>
-      <ul class="nav-bar">
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#work-me">Work</a></li>
-        <li><a href="#contact-me">Contact Me</a></li>
-        <li><a href="#resu-me">Resume</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- figure is my picture and the subtitle  -->
-  <figure>
-      <img class="my-picture" src="./assets/images/Chesed+Farms+Winter-116-2.jpg" alt="picture of Jonathan">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css" />
+  </head>
+
+  <body>
+    <!-- header is my name in bold and the navbar links -->
+    <header>
+      <h1>JONATHAN GARRETT</h1>
+      <nav>
+        <ul class="nav-bar">
+          <li><a href="#about-me-link">About Me</a></li>
+          <li><a href="#work-me">Work</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+          <li><a href="#resu-me">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- figure is my picture and the subtitle  -->
+    <figure>
+      <img
+        src="./assets/images/Chesed+Farms+Winter-116-2.jpg"
+        alt="picture of Jonathan"
+      />
       <h2>The Future of Web Development</h2>
-  </figure>
-<main>
-  <!-- About Me Section -->
-  <section class="about-me">
-    <h3 id="about-me">About Me</h3>
-    <div>
-      <p>I am a first year bootcamp student. I am just getting off the ground in my web development journey. My work would not take you to any amazing sites, but it will take you to some places that made me who I am today.</p>
-    </div>
-  </section> 
-  <!-- Work Section -->
-  <section class="work">
-    <h3 id="work-me">Work</h3>
-    <div class="work-picture">   
-      <a id="big-picture" href="http://www.chesedfarms.com" target="_blank"><img src="./assets/images/CHESED.jpg" alt="photo of mushroom box"style="width:600px;height:400px;"><h2>Mushroom Farm</h2>
-      <a id="little-picture" href="http://lsusports.net"target="_blank"><img src="./assets/images/lsu logo.svg" alt="photo of LSU logo"style="width:315px;height:200px;"><h2>My First Job</h2></a>
-      <a id="little-picture" href="https://jonathanlevi14.github.io/prework-study-guide/"target="_blank"><img src="./assets/images/prework.png" alt="photo of cat with bowtie"style="width:315px;height:200px;"><h2>Prework Study Guide</h2></a>
-      <a id="little-picture" href="http://espn.com"target="_blank"><img src="./assets/images/0-ESPN-Logo-for-PressRoom-780x470.webp" alt="photo of"style="width:315px;height:200px;"><h2>My Favorite Hobby</h2></a>
-      <a id="little-picture" href="#"target="_blank"><img src="./assets/images/placeholder-img.png" alt="photo of"style="width:315px;height:200px;"><h2>FIFTH</h2></a>
-    </div>
-  </section>
-  <!-- Contact Section-->
-  <section class="contact">
-    <h3 id="contact-me">Contact</h3>
-    <div class="info-box">
-     <ul class="contact-info">
-      <li>555-123-2424</li>
-      <li><a href="emailto:#">@email.com</a></li>
-      <li><a href="https://www.linkedin.com/in/jonathan-garrett-8a776a193/">LinkedIn</a></li>
-      <li><a href="https://twitter.com/home?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @home</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
-     </ul>
-    </div>
-  </section>
-</main>
-</body>
+    </figure>
+    <main>
+      <!-- About Me Section -->
+      <section class="about-me">
+        <h3 id="about-me-link">About Me</h3>
+        <div>
+          <p>
+            I am a first year bootcamp student. I am just getting off the ground
+            in my web development journey. My work would not take you to any
+            amazing sites, but it will take you to some places that made me who
+            I am today.
+          </p>
+        </div>
+      </section>
+      <!-- Work Section -->
+      <section class="work">
+        <h3 id="work-me">Work</h3>
+        <div class="work-picture">
+          <a href="http://www.chesedfarms.com" target="_blank">
+            <img 
+              id="big-picture"
+              src="./assets/images/CHESED.jpg"
+              alt="photo of mushroom box"
+              />
+            <h2>Mushroom Farm</h2>
+          </a>
+          <a href="http://lsusports.net" target="_blank">
+            <img 
+              class="little-picture"
+              src="./assets/images/lsu logo.svg"
+              alt="photo of LSU logo"
+              style="width: 315px; height: 200px"
+            />
+            <h2>My First Job</h2>
+          </a>
+          <a href="https://jonathanlevi14.github.io/prework-study-guide/" target="_blank">
+            <img 
+              class="little-picture"
+              src="./assets/images/prework.png"
+              alt="photo of cat with bowtie"
+              style="width: 315px; height: 200px"
+            />
+            <h2>Prework Study Guide</h2>
+          </a>
+          <a href="http://espn.com" target="_blank">
+            <img 
+              class="little-picture"
+              src="./assets/images/0-ESPN-Logo-for-PressRoom-780x470.webp"
+              alt="photo of"
+              style="width: 315px; height: 200px"
+            />
+            <h2>My Favorite Hobby</h2>
+          </a>
+          <a href="#" target="_blank">
+            <img 
+              class="little-picture"
+              src="./assets/images/placeholder-img.png"
+              alt="photo of"
+              style="width: 315px; height: 200px"
+            />
+            <h2>FIFTH</h2>
+          </a>
+        </div>
+      </section>
+      <!-- Contact Section-->
+      <section class="contact">
+        <h3 id="contact-me">Contact</h3>
+        <div class="info-box">
+          <ul class="contact-info">
+            <li>555-123-2424</li>
+            <li><a href="emailto:#">@email.com</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/jonathan-garrett-8a776a193/"
+                >LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/home?ref_src=twsrc%5Etfw"
+                class="twitter-follow-button"
+                data-show-count="false"
+                >Follow @home</a>
+              <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charset="utf-8">
+              </script>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
