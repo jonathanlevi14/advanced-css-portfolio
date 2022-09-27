@@ -179,7 +179,7 @@ section a h2 {
 }
 
 .info-box {
-  min-width: 700px;
+  min-width: 800px;
   flex-grow: 1;
   display: flex;
   align-items: right;
